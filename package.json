@@ -1,0 +1,35 @@
+{
+   "name": "loan_application",
+   "version": "1.0.0",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "nodemon index.js",
+      "typeorm": "typeorm-ts-node-commonjs"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "description": "Steps to run this project:",
+   "dependencies": {
+      "bcrypt": "^5.1.1",
+      "dotenv": "^16.4.5",
+      "ejs": "^3.1.10",
+      "express": "^4.21.0",
+      "mysql2": "^3.11.3",
+      "pg": "^8.4.0",
+      "reflect-metadata": "^0.1.13",
+      "sequelize": "^6.37.3",
+      "sequelize-cli": "^6.6.2",
+      "swagger-jsdoc": "^6.2.8",
+      "swagger-ui-express": "^5.0.1",
+      "typeorm": "0.3.20"
+   },
+   "devDependencies": {
+      "@types/express": "^4.17.21",
+      "@types/node": "^16.11.10",
+      "nodemon": "^3.1.7",
+      "ts-node": "10.9.1",
+      "typescript": "4.5.2"
+   }
+}

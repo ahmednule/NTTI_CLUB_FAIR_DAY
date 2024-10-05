@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/webp" sizes="16x16" href="img/spatans.webp">
+    <title>Spatan's Bank</title>
+    <!-- Bootstrap CDN Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-color: rgb(34, 33, 33);
+            font-size: 1.5em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+        }
+        h1 {
+            font-family: forte;
+            font-size: 2em;
+            color: chartreuse;
+            font-weight: 200;
+        }
+        h2, h4, p {
+            color: white;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Brand/Logo -->
+            <a class="navbar-brand" href="/">
+                <img src="img/spatans.webp" alt="Spatans Bank" width="30" height="30" class="d-inline-block align-text-top">
+                Spatans Bank
+            </a>
+    
+            <!-- Toggle button for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Links inside collapse div for better responsiveness -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <h1>Welcome to our bank</h1> 
+    <h2><b>Efficient and Affordable Loans</b></h2>
+    <h4>Track loans, monitor repayments, and receive notifications for defaults with ease.</h4>
+    <hr>
+    <h1>Key Features</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-dark bg-light mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Dedicated Support</h5>
+                        <p class="card-text" style="color:black;">Our team provides continuous support for all your loan management needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-dark bg-light mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Real-Time Tracking</h5>
+                        <p class="card-text" style="color:black;">Monitor your loan statuses in real-time with our intuitive dashboard.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-dark bg-light mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Default Notifications</h5>
+                        <p class="card-text" style="color:black;">Get instant alerts for any defaulting payments to take timely actions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-dark bg-light mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Secure Data</h5>
+                        <p class="card-text" style="color:black;">Ensure the safety of your financial data with our top-notch security measures.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-dark bg-light mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Performance Analytics</h5>
+                        <p class="card-text" style="color:black;">Analyze repayment trends and improve your financial strategies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-dark bg-light mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Client Management</h5>
+                        <p class="card-text" style="color:black;">Manage client information and track their loan histories efficiently.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Client Reviews</h2>
+    <p>Hear from our satisfied clients about their experiences with Spatans.</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/man.jpg" class="img-fluid" alt="John Martins">
+                <h2>John Martins</h2>
+                <h4>Business Owner</h4>  
+                <p>Spatans has transformed the way we manage our loans. The real-time tracking and notifications are game-changers.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/Img.jpg" class="img-fluid" alt="Jane Smith">
+                <h2>Jane Smith</h2>
+                <h4><i>Financial Advisor</i></h4>
+                <p>The support team at Spatans is incredibly responsive. They helped us streamline our loan processes effectively.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/WA0033.jpg" class="img-fluid" alt="Yves Johnson">
+                <h2>Yves Johnson</h2>
+                <h4><i>Loan Officer</i></h4>
+                <p>Using Spatans has been a smooth experience. The platform is user-friendly and highly reliable.</p>
+            </div>
+        </div>
+    </div>
+
+    <h1>Get started with Spatans</h1>
+    <h3>Join us and experience the best in loan management. Sign up now to get started!</h3><br>
+    
+    <h2>Contact Us</h2>
+    <p>Reach out for support or inquiries. We're here to help!</p>
+     
+    <h5>Nairobi, Kenyatta Avenue, KE: +254 7987789</h5>
+    <h5>Kiambu, Thika Town, KE: +254 828690678</h5>
+    <h5>Nakuru, Nakuru Town, KE: +254 2096487400</h5>
+    
+    <footer>
+        <h6>Spatans Bank</h6>
+        <h6>&copy; 2024 All rights reserved</h6>
+    </footer>
+
+</body>
+</html>
