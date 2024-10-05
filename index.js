@@ -13,7 +13,7 @@ app.use(express.json());
 
 // Routes
 app.get('/', (req, res) => {
-    res.render('home', { title: 'Home' });
+    res.render('signup', { title: 'signup' });
 });
 
 app.get('/about', (req, res) => {
@@ -24,19 +24,23 @@ app.get('/services', (req, res) => {
     res.render('services', { title: 'Services' });
 });
 
-app.get('/signup', (req, res) => {
-    res.render('signup', { title: 'Sign Up' });
+app.get('/home', (req, res) => {
+    res.render('home', { title: 'Home' });
 });
 
 app.post('/users', async (req, res) => {
     try {
         const { name, email, password, confirmPassword } = req.body;
+
+        if (!name || !email || !password || !confirmPassword) {
+            return res.status(400).json({ error: "All fields are required" });
+        }
+
         if (password !== confirmPassword) {
             return res.status(400).json({ error: "Passwords do not match" });
         }
 
-        // const hashedPassword = await bcrypt.hash(password, 10);
-        const user = await User.create({
+        const User = await user.create({
             name,
             email,
             password
@@ -48,6 +52,7 @@ app.post('/users', async (req, res) => {
         res.status(500).json({ error: 'Something went wrong' });
     }
 });
+
 
 app.get('/login', (req, res) => {
     res.render('login', { title: 'Login' });

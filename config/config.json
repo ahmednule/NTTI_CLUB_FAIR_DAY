@@ -1,10 +1,10 @@
 {
   "development": {
-    "username": "rootnpm i ",
+    "username": "postgres",
     "password": "maitha1-Nule",
-    "database": "spatan",
+    "database": "postgres",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "postgres"
   },
   "test": {
     "username": "root",
